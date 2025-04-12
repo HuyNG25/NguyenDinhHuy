@@ -1,8 +1,32 @@
-﻿//Bài 1: Viết chương trình nhập vào tên và tuổi, sau đó in ra màn hình thông báo "Xin chào  [tên], bạn[tuổi] tuổi!". 
-String ten;
-int tuoi;
-Console.Write("Nhap ten: ");
-ten = Console.ReadLine();
-Console.Write("Nhap tuoi: ");
-tuoi = int.Parse(Console.ReadLine()?? "0");
-Console.WriteLine("Xin chao " + ten + ", ban " + tuoi + " tuoi ");
+﻿using System;
+
+class Bai1
+{
+    // Hàm tính tổng các số chẵn trong mảng
+    static int SumEvenNumbers(int[] arr)
+    {
+        int sum = 0;
+
+        // Lặp qua tất cả các phần tử trong mảng
+        foreach (int num in arr)
+        {
+            // Nếu số chẵn, cộng vào tổng
+            if (num % 2 == 0)
+            {
+                sum += num;
+            }
+        }
+
+        return sum;
+    }
+
+    static void Main()
+    {
+        // Khởi tạo mảng ví dụ
+        int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+        // Gọi hàm và in kết quả
+        int result = SumEvenNumbers(numbers);
+        Console.WriteLine($"Tong cua cac so chan trong mang la: {result}");
+    }
+}

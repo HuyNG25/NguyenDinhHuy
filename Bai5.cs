@@ -1,0 +1,10 @@
+﻿int so1, so2;
+Double tich, tong;
+Console.WriteLine("Nhap vao so thu nhat: ");
+so1 = int.Parse(Console.ReadLine() ?? "0");
+Console.WriteLine("Nhap vao so thu hai: ");
+so2 = int.Parse(Console.ReadLine() ?? "0");
+tich = so1 * so2;
+Console.WriteLine($"Tich cua 2 so {so1} va {so2} la: " + tich);
+tong = so1 + so2;
+Console.WriteLine($"Tong cua 2 so {so1} va {so2} la: " + tong);
